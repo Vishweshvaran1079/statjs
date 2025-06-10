@@ -67,11 +67,16 @@ export default function Page() {
             <span>Customers</span>
           </Link>
           <hr className="my-3 border-t border-slate-500" />
-          <Link href="/notifications" className="relative flex items-center gap-3 hover:text-white">
-            <Bell size={18} />
-            <span>Notifications</span>
-            <span className="absolute -top-1 left-4 bg-red-600 text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">1</span>
-          </Link>
+          <Link href="/notifications" className="flex items-center gap-2 hover:text-white">
+  <div className="relative">
+    <Bell size={18} />
+    <span className="absolute -top-2 -right-2 bg-red-600 text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center">
+      1
+    </span>
+  </div>
+  <span>Notifications</span>
+</Link>
+
           <Link href="/help" className="flex items-center gap-3 hover:text-white">
             <HelpCircle size={18} />
             <span>Help & support</span>
